@@ -7,18 +7,20 @@ Learning what is the dreamer RL model
 The Dreamer model is a type of reinforcement learning (RL) algorithm designed to handle complex tasks by learning world models, which enable it to predict future states and plan actions effectively.
 
 1. World Model:
-The Dreamer model learns an internal representation of the environment, known as the world model. This model predicts future states and rewards based on the agent's current state and actions. The idea is that instead of relying purely on real-world interactions (which can be expensive or slow), the agent can simulate future scenarios internally, or "dream," to plan its actions.
+
+    The Dreamer model learns an internal representation of the environment, known as the world model. This model predicts future states and rewards based on the agent's current state and actions. The idea is that instead of relying purely on real-world interactions (which can be expensive or slow), the agent can simulate future scenarios internally, or "dream," to plan its actions.
 
 2. Latent space
-Dreamer operates in a latent space, meaning it encodes observations into a lower-dimensional representation. This makes the learning process more efficient because it reduces the complexity of the environment the agent has to deal with.
+
+    Dreamer operates in a latent space, meaning it encodes observations into a lower-dimensional representation. This makes the learning process more efficient because it reduces the complexity of the environment the agent has to deal with.
 
 3. Imagination
 
-Once the world model is trained, the Dreamer model can "imagine" future trajectories by predicting sequences of future states and rewards in its latent space. This allows the agent to evaluate potential future outcomes without needing to interact with the actual environment.
+    Once the world model is trained, the Dreamer model can "imagine" future trajectories by predicting sequences of future states and rewards in its latent space. This allows the agent to evaluate potential future outcomes without needing to interact with the actual environment.
 
 4. Planning:
 
-Based on its imagined trajectories, Dreamer plans and selects actions that maximize the expected cumulative reward. This planning is done over a finite horizon, meaning the agent considers a sequence of actions rather than a single one, to optimize long-term outcomes.
+    Based on its imagined trajectories, Dreamer plans and selects actions that maximize the expected cumulative reward. This planning is done over a finite horizon, meaning the agent considers a sequence of actions rather than a single one, to optimize long-term outcomes.
 
 ### Dreamer v1 - DREAM TO CONTROL: LEARNING BEHAVIORS BY LATENT IMAGINATION 2020
 https://arxiv.org/pdf/1912.01603
@@ -46,4 +48,4 @@ https://arxiv.org/pdf/2301.04104
 
 ### Intresting other papers
 - DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving
- - https://arxiv.org/pdf/2309.09777
+    - https://arxiv.org/pdf/2309.09777
